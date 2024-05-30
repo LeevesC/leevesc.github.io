@@ -1,4 +1,4 @@
-import { useMain } from "../MainContext";
+import { useMain } from "../contexts/MainContext";
 
 function Resume() {
   const {resume} = useMain();

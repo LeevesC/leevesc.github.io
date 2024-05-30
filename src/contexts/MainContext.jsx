@@ -4,6 +4,7 @@ const initialValue = {
   about: true,
   resume: false,
   portfolio: false,
+  sidebar: false,
 };
 function reducer(state, action) {
   switch (action.type) {
@@ -13,6 +14,8 @@ function reducer(state, action) {
       return { ...state, about: false, resume: true, portfolio: false };
     case "portfolio":
       return { ...state, about: false, resume: false, portfolio: true };
+    case "sidebar":
+      return { ...state, sidebar: !state.sidebar };
     default:
       throw new Error("Action unknown");
   }
@@ -21,7 +24,7 @@ function reducer(state, action) {
 // initiate context
 const MainContext = createContext();
 function MainProvider({ children }) {
-  const [{ about, resume, portfolio }, dispatch] = useReducer(
+  const [{ about, resume, portfolio, sidebar }, dispatch] = useReducer(
     reducer,
     initialValue
   );
@@ -31,6 +34,7 @@ function MainProvider({ children }) {
         about,
         resume,
         portfolio,
+        sidebar,
         dispatch,
       }}
     >

@@ -1,4 +1,4 @@
-import { useMain } from "../MainContext";
+import { useMain } from "../contexts/MainContext";
 
 function Portfolio() {
   const { portfolio } = useMain();
@@ -67,7 +67,7 @@ function Portfolio() {
                   <ion-icon name="eye-outline"></ion-icon>
                 </div>
                 <img
-                  src="/public/portfolio/project-1.jpg"
+                  src="/assets/portfolio/project-1.jpg"
                   alt="finance"
                   loading="lazy"
                 />
@@ -88,7 +88,7 @@ function Portfolio() {
                   <ion-icon name="eye-outline"></ion-icon>
                 </div>
                 <img
-                  src="/public/portfolio/project-2.png"
+                  src="/assets/portfolio/project-2.png"
                   alt="orizon"
                   loading="lazy"
                 />
@@ -109,7 +109,7 @@ function Portfolio() {
                   <ion-icon name="eye-outline"></ion-icon>
                 </div>
                 <img
-                  src="/public/portfolio/project-3.jpg"
+                  src="/assets/portfolio/project-3.jpg"
                   alt="fundo"
                   loading="lazy"
                 />

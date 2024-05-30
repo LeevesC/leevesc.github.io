@@ -1,10 +1,14 @@
+import { useMain } from "../contexts/MainContext";
+
 function Aside() {
+  const { sidebar, dispatch } = useMain();
+
   return (
-    <div className="sidebar">
+    <aside className={`sidebar ${sidebar && "active"}`}>
       <div className="sidebar-info">
         <figure className="avatar-box">
           <img
-            src="/public/side_images/my-avatar.png"
+            src="/assets/side_images/my-avatar.png"
             alt="Leeves Chou"
             width="80"
           />
@@ -15,7 +19,11 @@ function Aside() {
           </h1>
           <p className="title">Web developer / Product manager</p>
         </div>
-        <button className="info_more-btn">
+        {/* responsive button */}
+        <button
+          className="info_more-btn"
+          onClick={() => dispatch({ type: "sidebar" })}
+        >
           <span>Show Contacts</span>
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -94,7 +102,7 @@ function Aside() {
           </li>
         </ul>
       </div>
-    </div>
+    </aside>
   );
 }
 

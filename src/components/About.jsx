@@ -1,4 +1,4 @@
-import { useMain } from "../MainContext";
+import { useMain } from "../contexts/MainContext";
 
 function About() {
   const { about } = useMain();
@@ -32,7 +32,7 @@ function About() {
           <li className="service-item">
             <div className="service-icon-box">
               <img
-                src="/public/about_me/icon-design.svg"
+                src="/assets/about_me/icon-design.svg"
                 alt="design icon"
                 width="40"
               />
@@ -49,7 +49,7 @@ function About() {
           <li className="service-item">
             <div className="service-icon-box">
               <img
-                src="/public/about_me/icon-dev.svg"
+                src="/assets/about_me/icon-dev.svg"
                 alt="Web development icon"
                 width="40"
               />
@@ -65,7 +65,7 @@ function About() {
           <li className="service-item">
             <div className="service-icon-box">
               <img
-                src="/public/about_me/icon-app.svg"
+                src="/assets/about_me/icon-app.svg"
                 alt="mobile app icon"
                 width="40"
               />
@@ -81,7 +81,7 @@ function About() {
           <li className="service-item">
             <div className="service-icon-box">
               <img
-                src="/public/about_me/icon-photo.svg"
+                src="/assets/about_me/icon-photo.svg"
                 alt="camera icon"
                 width="40"
               />

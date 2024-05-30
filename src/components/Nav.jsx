@@ -1,4 +1,4 @@
-import { useMain } from "../MainContext";
+import { useMain } from "../contexts/MainContext";
 
 function Nav() {
   const { about, resume, portfolio, dispatch } = useMain();
@@ -31,21 +31,6 @@ function Nav() {
             Portfolio
           </button>
         </li>
-
-        {/* <li className="navbar-item">
-          <button className="navbar-link">
-            Blog
-          </button>
-        </li> */}
-
-        {/* <li className="navbar-item">
-          <button
-            className={`navbar-link ${contact && "active"}`}
-            onClick={() => dispatch({ type: "contact" })}
-          >
-            Contact
-          </button>
-        </li> */}
       </ul>
     </nav>
   );
