@@ -93,7 +93,7 @@
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
 
-  /* self-define */
+  /* ---------------- self-define ---------------- */
   --beige-1: rgba(255, 246, 235, 1); /* html background */
   --beige-2: rgba(241, 229, 215, 1); /* container background */
   --beige-3: hsla(33, 78%, 82%, 1); /* card background */
@@ -153,7 +153,7 @@ textarea {
 }
 
 ::selection {
-  background: var(--red-1);
+  background: var(--orange-yellow-crayola);
   color: var(--smoky-black);
 }
 
@@ -166,7 +166,7 @@ html {
 }
 
 body {
-  background-color: var(--beige-1);
+  background-color: var(--smoky-black);
 }
 
 /*-----------------------------------*\
@@ -175,7 +175,7 @@ body {
 
 .sidebar,
 article {
-  background: var(--beige-2);
+  background: var(--eerie-black-2);
   border: 1px solid var(--jet);
   border-radius: 20px;
   padding: 15px;
@@ -200,7 +200,7 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--red-1);
+  color: var(--orange-yellow-crayola);
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -209,16 +209,13 @@ article {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--beige-3);
+  background: var(--eerie-black-1);
   border-radius: inherit;
   z-index: -1;
 }
 
 .icon-box ion-icon {
   --ionicon-stroke-width: 35px;
-}
-ion-icon {
-  color: var(--red-2);
 }
 
 article {
@@ -243,7 +240,7 @@ article.active {
 .h3,
 .h4,
 .h5 {
-  color: var(--black-2);
+  color: var(--white-2);
   text-transform: capitalize;
 }
 
@@ -273,7 +270,7 @@ article.active {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--red-2);
+  background: var(--text-gradient-yellow);
   border-radius: 3px;
 }
 
