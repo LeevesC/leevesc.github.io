@@ -58,7 +58,7 @@
   width: 6px;
   background: var(--text-gradient-yellow);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--jet);
+  box-shadow: 0 0 0 2px var(--jet);
 }
 
 .timeline-text {
