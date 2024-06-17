@@ -9,12 +9,12 @@ function App() {
   return (
     <main>
       <Aside />
-      <Main>
+      {/* <Main>
         <Nav />
         <About />
         <Resume />
         <Portfolio />
-      </Main>
+      </Main> */}
     </main>
   );
 }

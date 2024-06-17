@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+  font-family: $ff-poppins;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $smoky-black;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img,
+ion-icon,
+a,
+button,
+time,
+span {
+  display: block;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  background: none;
+  font: inherit;
+}
+
+::selection {
+  background: $orange-yellow-crayola;
+  color: $smoky-black;
+}
+:focus {
+  outline-color: $orange-yellow-crayola;
+}
+
+main {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  min-width: 25.9rem;
+  // margin-bottom: 100px; < 1024px
+
+  // margin: 1.5rem 12rem; < 580px
+  // margin-bottom: 7.5rem; < 580
+
+  &__content { // > 1024
+    position: relative;
+    width: max-content;
+    margin: auto;
+  }
+}

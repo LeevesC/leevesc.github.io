@@ -1,13 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-
-import "./css/style.css";
-import "./css/nav.css";
-import "./css/about.css";
-import "./css/resume.css";
-import "./css/portfolio.css";
-import "./css/responsive.css";
+import "./styles/main.scss";
 
 
 import { MainProvider } from "./contexts/MainContext.jsx";
