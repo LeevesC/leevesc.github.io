@@ -8,7 +8,7 @@ function About() {
         <h2 className="h2 article-title">About me</h2>
       </header>
 
-      <section className="about-text">
+      <section className="about__text">
         <p>
           I'm Creative Director and UI/UX Designer from Sydney, Australia,
           working in web development and print media. I enjoy turning complex
@@ -28,69 +28,36 @@ function About() {
       <section className="service">
         <h3 className="h3 service-title">What i'm doing</h3>
 
-        <ul className="service-list">
-          <li className="service-item">
-            <div className="service-icon-box">
+        <ul className="service__list">
+          <li className="service__item">
+            <div className="service__iconbox">
               <img
                 src="/assets/about_me/icon-design.svg"
                 alt="design icon"
                 width="40"
               />
             </div>
-            <div className="service-content-box">
-              <h4 className="h4 service-item-title">Web design</h4>
-              <p className="service-item-text">
+            <div className="service__content">
+              <h4 className="h4 service__content-title">Web design</h4>
+              <p className="service__content-text">
                 The most modern and high-quality design made at a professional
                 level.
               </p>
             </div>
           </li>
 
-          <li className="service-item">
-            <div className="service-icon-box">
+          <li className="service__item">
+            <div className="service__iconbox">
               <img
                 src="/assets/about_me/icon-dev.svg"
                 alt="Web development icon"
                 width="40"
               />
             </div>
-            <div className="service-content-box">
-              <h4 className="h4 service-item-title">Web development</h4>
-              <p className="service-item-text">
+            <div className="service__content">
+              <h4 className="h4 service__content-title">Web development</h4>
+              <p className="service__content-text">
                 High-quality development of sites at the professional level.
-              </p>
-            </div>
-          </li>
-
-          <li className="service-item">
-            <div className="service-icon-box">
-              <img
-                src="/assets/about_me/icon-app.svg"
-                alt="mobile app icon"
-                width="40"
-              />
-            </div>
-            <div className="service-content-box">
-              <h4 className="h4 service-item-title">Mobile apps</h4>
-              <p className="service-item-text">
-                Professional development of applications for iOS and Android.
-              </p>
-            </div>
-          </li>
-
-          <li className="service-item">
-            <div className="service-icon-box">
-              <img
-                src="/assets/about_me/icon-photo.svg"
-                alt="camera icon"
-                width="40"
-              />
-            </div>
-            <div className="service-content-box">
-              <h4 className="h4 service-item-title">Photography</h4>
-              <p className="service-item-text">
-                I make high-quality photos of any category at a professional
-                level.
               </p>
             </div>
           </li>

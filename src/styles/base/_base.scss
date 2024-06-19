@@ -65,10 +65,9 @@ main {
 
   // margin: 1.5rem 12rem; < 580px
   // margin-bottom: 7.5rem; < 580
-
-  &__content { // > 1024
-    position: relative;
-    width: max-content;
-    margin: auto;
-  }
+}
+.main__content { // > 1024
+  position: relative;
+  width: max-content;
+  margin: auto;
 }

@@ -1,28 +1,27 @@
 import { useMain } from "../contexts/MainContext";
 
-
 function Aside() {
   const { sidebar, dispatch } = useMain();
 
   return (
     <aside className={`sidebar ${sidebar && "active"}`}>
-      <div className="sidebar-info">
-        <figure className="avatar-box">
+      <div className="header">
+        <figure className="header__avatarbox">
           <img
             src="/assets/side_images/my-avatar.png"
             alt="Leeves Chou"
             width="80"
           />
         </figure>
-        <div className="info-content">
-          <h1 className="name" title="Leeves Chou">
+        <div className="header__content">
+          <h1 className="header__title" title="Leeves Chou">
             Leeves Chou
           </h1>
-          <p className="title">Web developer / Product manager</p>
+          <p className="header__subtitle">Web developer / Product manager</p>
         </div>
         {/* responsive button */}
         <button
-          className="info_more-btn"
+          className="header__btn"
           onClick={() => dispatch({ type: "sidebar" })}
         >
           <span>Show Contacts</span>
@@ -30,50 +29,50 @@ function Aside() {
         </button>
       </div>
 
-      <div className="sidebar-info_more">
+      <div className="info">
         <div className="separator"></div>
 
-        <ul className="contacts-list">
-          <li className="contact-item">
+        <ul className="info__container">
+          <li className="info__item">
             <div className="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-            <div className="contact-info">
-              <p className="contact-title">Email</p>
-              <a href="#" className="contact-link">
+            <div className="info__content">
+              <p className="info__title">Email</p>
+              <a href="#" className="info__link">
                 leeves.chou@gmail.com
               </a>
             </div>
           </li>
 
-          <li className="contact-item">
+          <li className="info__item">
             <div className="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
-            <div className="contact-info">
-              <p className="contact-title">Phone</p>
-              <a href="tel:+12133522795" className="contact-link">
+            <div className="info__content">
+              <p className="info__title">Phone</p>
+              <a href="tel:+12133522795" className="info__link">
                 +(61) 047-8585-234
               </a>
             </div>
           </li>
 
-          <li className="contact-item">
+          <li className="info__item">
             <div className="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
             </div>
-            <div className="contact-info">
-              <p className="contact-title">Birthday</p>
+            <div className="info__content">
+              <p className="info__title">Birthday</p>
               <time dateTime="1982-06-23">June 23, 1982</time>
             </div>
           </li>
 
-          <li className="contact-item">
+          <li className="info__item">
             <div className="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
-            <div className="contact-info">
-              <p className="contact-title">Location</p>
+            <div className="info__content">
+              <p className="info__title">Location</p>
               <address>Adelaide, SA, Australia</address>
             </div>
           </li>
@@ -81,23 +80,23 @@ function Aside() {
 
         <div className="separator"></div>
 
-        <ul className="social-list">
-          <li className="social-item">
-            <a className="social-link">
+        <ul className="social__container">
+          <li className="social__item">
+            <a className="social__link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
-          <li className="social-item">
+          <li className="social__item">
             <a
               href="https://x.com/home"
-              className="social-link"
+              className="social__link"
               target="_blank"
             >
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
-          <li className="social-item">
-            <a href="#" className="social-link">
+          <li className="social__item">
+            <a href="#" className="social__link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>

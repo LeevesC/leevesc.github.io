@@ -4,7 +4,7 @@ function Portfolio() {
   const { portfolio } = useMain();
   return (
     <article
-      className={`resume ${portfolio && "active"}`}
+      className={`projects ${portfolio && "active"}`}
       data-page="portfolio"
     >
       <header>
@@ -12,25 +12,25 @@ function Portfolio() {
       </header>
 
       <section className="projects">
-        <ul className="filter-list">
-          <li className="filter-item">
+        <ul className="filter__list">
+          <li className="filter__item">
             <button className="active" data-filter-btn>
               All
             </button>
           </li>
-          <li className="filter-item">
+          <li className="filter__item">
             <button data-filter-btn>Web design</button>
           </li>
-          <li className="filter-item">
+          <li className="filter__item">
             <button data-filter-btn>Applications</button>
           </li>
-          <li className="filter-item">
+          <li className="filter__item">
             <button data-filter-btn>Web development</button>
           </li>
         </ul>
 
-        <div className="filter-select-box">
-          <button className="filter-select" data-select>
+        <div className="filter__select">
+          <button className="filter__select-btn" data-select>
             <div className="select-value" data-selecct-value>
               Select category
             </div>
@@ -39,33 +39,30 @@ function Portfolio() {
             </div>
           </button>
 
-          <ul className="select-list">
-            <li className="select-item">
+          <ul className="filter__select-list">
+            <li className="filter__select-item">
               <button data-select-item>All</button>
             </li>
-            <li className="select-item">
+            <li className="filter__select-item">
               <button data-select-item>Web design</button>
             </li>
-            <li className="select-item">
+            <li className="filter__select-item">
               <button data-select-item>Applications</button>
             </li>
-            <li className="select-item">
+            <li className="filter__select-item">
               <button data-select-item>Web development</button>
             </li>
           </ul>
         </div>
 
-        <ul className="project-list">
+        <ul className="project__list">
           <li
-            className="project-item active"
+            className="project__item active"
             data-filter-item
             data-category="web development"
           >
             <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
+              <figure className="project__img">
                 <img
                   src="/assets/portfolio/project-1.jpg"
                   alt="finance"
@@ -78,15 +75,12 @@ function Portfolio() {
           </li>
 
           <li
-            className="project-item active"
+            className="project__item active"
             data-filter-item
             data-category="web development"
           >
             <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
+              <figure className="project__img">
                 <img
                   src="/assets/portfolio/project-2.png"
                   alt="orizon"
@@ -95,27 +89,6 @@ function Portfolio() {
               </figure>
               <h3 className="project-title">Orizon</h3>
               <p className="project-category">Web development</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item active"
-            data-filter-item
-            data-category="web design"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img
-                  src="/assets/portfolio/project-3.jpg"
-                  alt="fundo"
-                  loading="lazy"
-                />
-              </figure>
-              <h3 className="project-title">Fundo</h3>
-              <p className="project-category">Web design</p>
             </a>
           </li>
         </ul>

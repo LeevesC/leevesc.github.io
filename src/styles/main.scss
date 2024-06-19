@@ -5,4 +5,11 @@
 @import "./base/reused";
 @import "./base/animations";
 
+@import "./layout/sidebar";
+@import "./layout/article";
+@import "./layout/navigation";
+
 @import "./pages/side";
+@import "./pages/about";
+@import "./pages/resume";
+@import "./pages/portfolio";

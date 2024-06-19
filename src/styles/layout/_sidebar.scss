@@ -1,0 +1,23 @@
+.sidebar {
+  width: 95rem;
+  max-height: 18rem;
+  margin-bottom: 3rem;
+  margin-inline: auto;
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: $shadow-5;
+  // padding: 1.5rem; < 580px
+  // box-shadow: $shadow-1; < 1024px
+  
+  
+  // margin-bottom: 1.5rem; // <580
+  // max-height: 11.2rem; // <580
+  background: $eerie-black-2;
+  overflow: hidden;
+  transition: $transition-2;
+  
+  &.active {
+    max-height: 58.4rem;
+    // max-height: 40.5rem; <580
+  }
+}
