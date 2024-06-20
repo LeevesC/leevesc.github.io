@@ -28,7 +28,7 @@ function Nav() {
             className={`navbar__item-link ${portfolio && "active"}`}
             onClick={() => dispatch({ type: "portfolio" })}
           >
-            Portfolio
+            Projects
           </button>
         </li>
       </ul>

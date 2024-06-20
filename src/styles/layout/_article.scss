@@ -1,21 +1,30 @@
 article {
   width: 95rem;
-  // width: default not setting; // < 580
-  // width: 52rem // < 768
-  // width: 70rem; // < 1024
   margin-inline: auto;
   padding: 3rem;
+  // width: default not setting; // < 580
 
   // padding: 1.5rem; < 580px
-  // box-shadow: $shadow-1; < 1024px
   background: $eerie-black-2;
-  box-shadow: $shadow-5;
+  box-shadow: $shadow-2;
   border-radius: 2rem;
   z-index: 1;
   display: none;
+  transition: $transition-2;
 
   &.active {
     display: block;
     animation: fade 0.5s ease backwards;
+  }
+
+  @include respond(big-desktop){
+    width: auto;
+    min-height: 100%;
+  }
+  @include respond(tab-port) {
+    width: 70rem;
+  }
+  @include respond(phone-l) {
+    width: 52rem;
   }
 }

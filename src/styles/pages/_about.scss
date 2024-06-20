@@ -29,8 +29,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem 2.5rem;
-    // grid-template-columns: 1fr; // < 1024
-    // gap: 2rem; // < 1024
+    @include respond(tab-port) {
+      grid-template-columns: 1fr; // < 1024
+      gap: 2rem; // < 1024
+    }
   }
 
   &__item {

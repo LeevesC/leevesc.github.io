@@ -67,6 +67,9 @@
       color: $light-gray;
       font-weight: 300;
       line-height: 1.6;
+      @include respond(big-desktop) {
+        max-width: 70rem;
+      }
     }
   }
 }

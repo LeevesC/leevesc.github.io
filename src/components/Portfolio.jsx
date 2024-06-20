@@ -8,11 +8,12 @@ function Portfolio() {
       data-page="portfolio"
     >
       <header>
-        <h2 className="h2 article-title">Portfolio</h2>
+        <h2 className="h2 article-title">Projects</h2>
       </header>
 
       <section className="projects">
-        <ul className="filter__list">
+
+        {/* <ul className="filter__list">
           <li className="filter__item">
             <button className="active" data-filter-btn>
               All
@@ -27,9 +28,9 @@ function Portfolio() {
           <li className="filter__item">
             <button data-filter-btn>Web development</button>
           </li>
-        </ul>
+        </ul> */}
 
-        <div className="filter__select">
+        {/* <div className="filter__select">
           <button className="filter__select-btn" data-select>
             <div className="select-value" data-selecct-value>
               Select category
@@ -53,7 +54,7 @@ function Portfolio() {
               <button data-select-item>Web development</button>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         <ul className="project__list">
           <li

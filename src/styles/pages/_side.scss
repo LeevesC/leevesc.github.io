@@ -5,14 +5,24 @@
   align-items: center;
   gap: 2.5rem;
   // gap: 1.5rem; // <580
+  @include respond(big-desktop) {
+    flex-direction: column;
+  }
 
   &__avatarbox {
     background: $bg-gradient-onyx;
     border-radius: 3rem;
-    // border-radius: 2rem;  // <580
-
+    @include respond(phone-s) {
+      border-radius: 2rem; // <580
+    }
     & img {
       width: 12rem;
+      @include respond(big-desktop) {
+        width: 15rem;
+      }
+      @include respond(phone-s) {
+        width: 8rem;
+      }
     }
   }
 
@@ -23,6 +33,14 @@
     letter-spacing: -0.25px;
     margin-bottom: 1.5rem;
     // margin-bottom: 1rem;  // <580
+    @include respond(big-desktop) {
+      white-space: nowrap;
+      text-align: center;
+    }
+    @include respond(phone-s) {
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+    }
   }
 
   &__subtitle {
@@ -34,6 +52,12 @@
     padding: 0.5rem 1.8rem;
     // padding: 0.3rem 1.2rem; // <580
     border-radius: 0.8rem;
+    @include respond(big-desktop) {
+      margin: auto;
+    }
+    @include respond(phone-s) {
+      font-size: 1.1rem;
+    }
   }
 
   &__btn {
@@ -41,16 +65,21 @@
     top: -3rem;
     right: -3rem;
     padding: 1rem 1.5rem;
-    // top: -1.5rem; // <580
-    // right: -1.5rem; // <580
     border-radius: 0 1.5rem;
     font-size: 1.3rem;
     color: $orange-yellow-crayola;
     /* background: $border-gradient-onyx); */
-    // padding: 1rem; // <580
     box-shadow: $shadow-2;
     transition: $transition-1;
     z-index: 1;
+    @include respond(big-desktop) {
+      display: none;
+    }
+    @include respond(phone-s) {
+      top: -1.5rem; // <580
+      right: -1.5rem; // <580
+      padding: 1rem; // <580
+    }
 
     &::before {
       content: "";
@@ -69,10 +98,16 @@
     & span {
       display: block;
       font-size: $font-size-8;
+      @include respond(phone-s) {
+        display: none;
+      }
     }
 
     & ion-icon {
       display: none;
+      @include respond(phone-s) {
+        display: block;
+      }
     }
   }
 }
@@ -80,6 +115,15 @@
 // -------------------------------
 .separator {
   margin: 3.2rem 0;
+  &:last-of-type {
+    @include respond(big-desktop) {
+      margin: 1.5rem 0;
+      opacity: 0;
+    }
+  }
+  @include respond(phone-s) {
+    margin: 1.6rem 0;
+  }
 }
 
 .sidebar.active .info {
@@ -92,15 +136,25 @@
   opacity: 1;
   visibility: hidden;
   transition: $transition-2;
+  @include respond(big-desktop) {
+    opacity: 1;
+    visibility: visible;
+  }
 
   &__container {
     grid-template-columns: 1fr 1fr;
     gap: 3rem 1.5rem;
     display: grid;
-
-    // grid-template-columns: 1fr; // < 768px
-    // gap: 1.6rem; // < 768px
-    // gap: 2rem; // < 580
+    @include respond(big-desktop) {
+      grid-template-columns: 1fr;
+    }
+    @include respond(phone-l) {
+      grid-template-columns: 1fr; // < 768px
+      gap: 1.6rem; // < 768px
+    }
+    @include respond(phone-s) {
+      gap: 2rem; // < 580
+    }
   }
 
   &__item {
@@ -113,12 +167,27 @@
   &__content {
     max-width: calc(100% - 6.4rem);
     width: calc(100% - 6.4rem);
-    // max-width: calc(100% - 4.6rem); < 580px
-    // width: calc(100% - 4.6rem); < 580px
-
+    @include respond(phone-s) {
+      max-width: calc(100% - 4.6rem); //< 580px
+      width: calc(100% - 4.6rem); //< 580px
+    }
+    & :is(.info__link) {
+      @include respond(big-desktop) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
     & :is(.info__link, time, address) {
       color: $white-2;
       font-size: $font-size-7;
+      @include respond(big-desktop) {
+        font-size: 1.4rem;
+        font-weight: 300;
+      }
+      @include respond(phone-s) {
+        font-size: 1.3rem;
+      }
     }
 
     & address {
@@ -131,6 +200,9 @@
     font-size: $font-size-8;
     text-transform: uppercase;
     margin-bottom: 0.2rem;
+    @include respond(phone-s) {
+      font-size: 1.1rem;
+    }
   }
 }
 
@@ -142,6 +214,9 @@
     gap: 1.5rem;
     padding-bottom: 0.4rem;
     padding-left: 0.4rem;
+    @include respond(big-desktop) {
+      justify-content: center;
+    }
   }
 
   &__item &__link {

@@ -1,29 +1,30 @@
 .navbar {
-  border-radius: 2rem 2rem 0 0;
-
   position: absolute;
   bottom: auto;
   top: 0;
   left: auto;
   right: 0;
   width: max-content;
+  // border-radius: 2rem 2rem 0 0;
   border-radius: 0 2rem;
   padding: 0 2rem;
   box-shadow: none;
-
-  // position: fixed; // < 1024
-  // bottom: 0; // <1024
-  // left: 0; // <1024
-  // width: 100%; // <1024
   background: $bg-gradient-jet;
   backdrop-filter: blur(1rem);
   /* border: 1px solid $jet); */
-  // border-radius: 12px 12px 0 0; // <580
-  // box-shadow: $shadow-2; // <1024
-  z-index: 5;
+  @include respond(tab-port) {
+    position: fixed; // < 1024
+    bottom: 0;
+    top: auto; // <1024
+    left: 0; // <1024
+    width: 100%; // <1024
+    border-radius: 1.2rem 1.2rem 0 0;
+    box-shadow: $shadow-2; // <1024
+    background: rgba($bg-gradient-jet, 0.4);
+    z-index: 5;
+  }
 
   &__list {
-    // gap: 2rem; // <1024
     // gap: 0rem; // <580
     gap: 3rem;
     padding: 0 2rem;
@@ -31,19 +32,28 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    // padding: 0 10px; // <1024
+    @include respond(tab-port) {
+      padding: 0 1rem; // <1024
+      gap: 2rem; // <1024
+    }
   }
 
   &__item-link {
     color: $light-gray;
     font-size: 1.5rem;
     font-weight: 500;
-    // font-weight: 0; // <1024
-    // font-size: 1.4rem; // < 768
-    // font-size: $font-size-8; // < 580
     padding: 2rem 0.7rem;
     transition: color $transition-1;
-    
+    @include respond(tab-port) {
+      font-weight: 400; // <1024
+    }
+    @include respond(phone-l) {
+      font-size: 1.4rem; // < 768
+    }
+    @include respond(phone-s) {
+      font-size: 1.1rem; // < 580
+      font-weight: 400; // <1024
+    }
 
     &:hover,
     &:focus {
