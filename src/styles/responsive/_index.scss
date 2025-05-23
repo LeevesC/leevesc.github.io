@@ -1,0 +1,40 @@
+/*-----------------------------------*\
+  #RESPONSIVE - MAIN FILE
+\*-----------------------------------*/
+
+// Import variables and all breakpoint-specific files
+@use "../variables" as *;
+@use "small";
+@use "medium";
+// @use "tablet";
+// @use "desktop";
+// @use "large";
+
+// Media query breakpoint mixin for future use (optional)
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (min-width: $breakpoint-450) {
+      @content;
+    }
+  }
+  @if $breakpoint == medium {
+    @media (min-width: $breakpoint-580) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media (min-width: $breakpoint-768) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: $breakpoint-1024) {
+      @content;
+    }
+  }
+  @if $breakpoint == large {
+    @media (min-width: $breakpoint-1250) {
+      @content;
+    }
+  }
+}

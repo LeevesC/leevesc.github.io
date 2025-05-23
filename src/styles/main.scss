@@ -1,15 +1,28 @@
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
+/*-----------------------------------*\
+  #MAIN SCSS FILE - vCard Portfolio
+\*-----------------------------------*/
 
-@import "./base/base";
-@import "./base/reused";
-@import "./base/animations";
+/**
+ * copyright 2022 @codewithsadee
+ * 
+ * SCSS conversion and modular organization
+ * by AI Assistant
+ */
 
-@import "./layout/sidebar";
-@import "./layout/article";
-@import "./layout/navigation";
+// Import variables first (required by all other modules)
+@use "variables" as *;
 
-@import "./pages/side";
-@import "./pages/about";
-@import "./pages/resume";
-@import "./pages/portfolio";
+// Import base styles (reset, typography, keyframes)
+@use "base";
+
+// Import layout components (main structure)
+@use "layout";
+
+// Import reusable components
+// @use "components";
+
+// Import page-specific styles
+// @use "pages";
+
+// Import responsive styles (media queries)
+@use "responsive";

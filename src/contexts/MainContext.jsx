@@ -6,6 +6,7 @@ const initialValue = {
   portfolio: false,
   sidebar: false,
 };
+
 function reducer(state, action) {
   switch (action.type) {
     case "about":

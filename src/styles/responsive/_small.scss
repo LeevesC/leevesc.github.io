@@ -1,0 +1,17 @@
+/*-----------------------------------*\
+  #RESPONSIVE - SMALL (450px+)
+\*-----------------------------------*/
+
+@use "../variables" as *;
+
+// 450px and above
+@media (min-width: $breakpoint-450) {
+  .clients-item {
+    min-width: calc(33.33% - 10px);
+  }
+
+  .project-img,
+  .blog-banner-box {
+    height: 200px;
+  }
+}
