@@ -6,9 +6,9 @@
 @use "../variables" as *;
 @use "small";
 @use "medium";
-// @use "tablet";
-// @use "desktop";
-// @use "large";
+@use "tablet";
+@use "desktop";
+@use "large";
 
 // Media query breakpoint mixin for future use (optional)
 @mixin respond-to($breakpoint) {

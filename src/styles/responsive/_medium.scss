@@ -7,14 +7,9 @@
 // 580px and above
 @media (min-width: $breakpoint-580) {
   // Variables override for medium screens
+
   :root {
-    --fs-1: 32px;
-    --fs-2: 24px;
-    --fs-3: 26px;
-    --fs-4: 18px;
-    --fs-6: 15px;
-    --fs-7: 15px;
-    --fs-8: 12px;
+    @include font-sizes("medium");
   }
 
   main {
@@ -67,7 +62,7 @@
 
     span {
       display: block;
-      font-size: $fs-8;
+      font-size: 12px;
     }
 
     ion-icon {
@@ -77,15 +72,6 @@
 
   .separator {
     margin: 32px 0;
-  }
-
-  .contacts-list {
-    gap: 20px;
-  }
-
-  .contact-info {
-    max-width: calc(100% - 64px);
-    width: calc(100% - 64px);
   }
 
   .article-title {
@@ -105,186 +91,93 @@
     font-size: 18px;
   }
 
+  // Navbar
   .navbar {
     border-radius: 20px 20px 0 0;
-  }
 
-  .navbar-list {
-    gap: 20px;
-  }
+    .navbar-list {
+      gap: 20px;
 
-  .navbar-link {
-    --fs-8: 14px;
+      .navbar-item {
+        .navbar-link {
+          font-size: 14px;
+        }
+      }
+    }
   }
 
   // About page
-  .about .article-title {
-    margin-bottom: 20px;
+  .about {
+    .article-title {
+      margin-bottom: 20px;
+    }
+
+    .about-text {
+      margin-bottom: 40px;
+    }
   }
 
-  .about-text {
-    margin-bottom: 40px;
+  // Service responsive styles
+  .service {
+    .service-list {
+      .service-item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 18px;
+        padding: 30px;
+
+        .service-icon-box {
+          margin-bottom: 0;
+          margin-top: 5px;
+        }
+
+        .service-content-box {
+          text-align: left;
+        }
+      }
+    }
   }
 
-  // Service item
-  .service-item {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 18px;
-    padding: 30px;
+  // Resume responsive styles
+  .resume {
+    .timeline {
+      .timeline-list {
+        margin-left: 65px;
+
+        .timeline-item {
+          &:not(:last-child)::before {
+            left: -40px;
+          }
+
+          &::after {
+            height: 8px;
+            width: 8px;
+            left: -43px;
+          }
+        }
+      }
+    }
+
+    .skills {
+      .skills-list {
+        .skills-item {
+          &:not(:last-child) {
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
   }
 
-  .service-icon-box {
-    margin-bottom: 0;
-    margin-top: 5px;
-  }
-
-  .service-content-box {
-    text-align: left;
-  }
-
-  // Testimonials
-  .testimonials-title {
-    margin-bottom: 25px;
-  }
-
-  .testimonials-list {
-    gap: 30px;
-    margin: 0 -30px;
-    padding: 30px;
-    padding-bottom: 35px;
-  }
-
-  .content-card {
-    padding: 30px;
-    padding-top: 25px;
-  }
-
-  .testimonials-avatar-box {
-    transform: translate(30px, -30px);
-    border-radius: 20px;
-  }
-
-  .testimonials-avatar-box img {
-    width: 80px;
-  }
-
-  .testimonials-item-title {
-    margin-bottom: 10px;
-    margin-left: 95px;
-  }
-
-  .testimonials-text {
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
-  }
-
-  // Modal
-  .modal-container {
-    padding: 20px;
-  }
-
-  .testimonials-modal {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 25px;
-    padding: 30px;
-    border-radius: 20px;
-  }
-
-  .modal-img-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .modal-avatar-box {
-    border-radius: 18px;
-    margin-bottom: 0;
-  }
-
-  .modal-avatar-box img {
-    width: 65px;
-  }
-
-  .modal-img-wrapper > img {
-    display: block;
-    flex-grow: 1;
-    width: 35px;
-  }
-
-  // Clients
-  .clients-list {
-    gap: 50px;
-    margin: 0 -30px;
-    padding: 45px;
-    scroll-padding-inline: 45px;
-  }
-
-  .clients-item {
-    min-width: calc(33.33% - 35px);
-  }
-
-  // Timeline
-  .timeline-list {
-    margin-left: 65px;
-  }
-
-  .timeline-item:not(:last-child)::before {
-    left: -40px;
-  }
-
-  .timeline-item::after {
-    height: 8px;
-    width: 8px;
-    left: -43px;
-  }
-
-  .skills-item:not(:last-child) {
-    margin-bottom: 25px;
-  }
-
-  // Portfolio & Blog
-  .project-img,
-  .blog-banner-box {
-    border-radius: 16px;
-  }
-
-  .blog-posts-list {
-    gap: 30px;
-  }
-
-  .blog-content {
-    padding: 25px;
-  }
-
-  // Contact
-  .mapbox {
-    height: 380px;
-    border-radius: 18px;
-  }
-
-  .input-wrapper {
-    gap: 30px;
-    margin-bottom: 30px;
-  }
-
-  .form-input {
-    padding: 15px 20px;
-  }
-
-  textarea.form-input {
-    margin-bottom: 30px;
-  }
-
-  .form-btn {
-    --fs-6: 16px;
-    padding: 16px 20px;
-
-    ion-icon {
-      font-size: 18px;
+  // Portfolio & Blog responsive styles
+  .portfolio {
+    .project-list {
+      .project-item {
+        .project-img {
+          border-radius: 16px;
+        }
+      }
     }
   }
 }

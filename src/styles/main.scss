@@ -15,14 +15,14 @@
 // Import base styles (reset, typography, keyframes)
 @use "base";
 
+// Import reusable components
+@use "components";
+
 // Import layout components (main structure)
 @use "layout";
 
-// Import reusable components
-// @use "components";
-
 // Import page-specific styles
-// @use "pages";
+@use "pages";
 
 // Import responsive styles (media queries)
 @use "responsive";

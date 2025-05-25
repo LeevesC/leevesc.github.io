@@ -1,0 +1,137 @@
+/*-----------------------------------*\
+  #RESPONSIVE - LARGE (1250px+)
+\*-----------------------------------*/
+
+@use "../variables" as *;
+
+// 1250px and above
+@media (min-width: $breakpoint-1250) {
+  // Variables override for large screens
+
+  // Reused styles
+  body {
+    &::-webkit-scrollbar {
+      width: 20px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $smoky-black;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border: 5px solid $smoky-black;
+      background: hsla(0, 0%, 100%, 0.1);
+      border-radius: 20px;
+      box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
+        inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: hsla(0, 0%, 100%, 0.15);
+    }
+
+    &::-webkit-scrollbar-button {
+      height: 60px;
+    }
+  }
+
+  .sidebar,
+  article {
+    width: auto;
+  }
+
+  article {
+    width: auto;
+  }
+
+  // Main
+  main {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .main-content {
+    min-width: 75%;
+    width: 75%;
+    margin: 0;
+  }
+
+  // Sidebar
+  .sidebar {
+    position: sticky;
+    top: 60px;
+    max-height: max-content;
+    width: 25%;
+    margin-top: 0;
+    padding-top: 60px;
+    z-index: 1;
+  }
+
+  .sidebar-header {
+    flex-direction: column;
+
+    .avatar-box {
+      img {
+        width: 150px;
+      }
+    }
+
+    .header-content {
+      .name {
+        white-space: nowrap;
+        text-align: center;
+      }
+      .title {
+        margin: auto;
+      }
+    }
+  }
+
+  .header-btn {
+    display: none;
+  }
+
+  .sidebar-info {
+    opacity: 1;
+    visibility: visible;
+
+    .contacts-list {
+      grid-template-columns: 1fr;
+
+      .contact-item {
+        .contact-info {
+          :is(.contact-link) {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          :is(.contact-link, time, address) {
+            font-size: 14px;
+            font-weight: $fw-300;
+          }
+        }
+      }
+    }
+    .social-list {
+      justify-content: center;
+    }
+  }
+
+  .separator:last-of-type {
+    margin: 15px 0;
+    opacity: 0;
+  }
+
+  // Timeline
+  .resume {
+    .timeline {
+      .timeline-text {
+        max-width: 700px;
+      }
+    }
+  }
+}

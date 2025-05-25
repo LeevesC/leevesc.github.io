@@ -4,6 +4,10 @@
 
 @use "variables" as *;
 
+:root {
+  @include font-sizes("base");
+}
+
 // CSS Reset
 *,
 *::before,
@@ -73,19 +77,19 @@ body {
 }
 
 .h2 {
-  font-size: $fs-1;
+  font-size: var(--fs-1);
 }
 
 .h3 {
-  font-size: $fs-2;
+  font-size: var(--fs-2);
 }
 
 .h4 {
-  font-size: $fs-4;
+  font-size: var(--fs-4);
 }
 
 .h5 {
-  font-size: $fs-7;
+  font-size: var(--fs-7);
   font-weight: $fw-500;
 }
 

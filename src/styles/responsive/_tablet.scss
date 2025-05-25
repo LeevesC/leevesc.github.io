@@ -1,0 +1,39 @@
+/*-----------------------------------*\
+  #RESPONSIVE - TABLET (768px+)
+\*-----------------------------------*/
+
+@use "../variables" as *;
+
+@media (min-width: $breakpoint-768) {
+  // Reused styles
+  .sidebar,
+  article {
+    width: 700px;
+  }
+
+  .has-scrollbar {
+    &::-webkit-scrollbar {
+      width: 100px;
+    }
+  }
+
+  // Sidebar
+  .sidebar-info {
+    .contacts-list {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px 15px;
+    }
+  }
+
+  // Navbar
+  .navbar-link {
+    font-size: 15px;
+  }
+
+  // About
+
+  // Portfolio
+  .article-title {
+    padding-bottom: 20px;
+  }
+}

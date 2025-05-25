@@ -1,0 +1,67 @@
+/*-----------------------------------*\
+  #RESPONSIVE - DESKTOP (1024px+)
+\*-----------------------------------*/
+
+@use "../variables" as *;
+
+// 1024px and above
+@media (min-width: $breakpoint-1024) {
+  // Variables override for desktop screens
+
+  // Reused styles
+  .sidebar,
+  article {
+    width: 950px;
+    box-shadow: $shadow-5;
+  }
+
+  // Main
+  main {
+    margin-bottom: 60px;
+  }
+
+  .main-content {
+    position: relative;
+    width: max-content;
+    margin: auto;
+  }
+
+  // Navbar
+  .navbar {
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: max-content;
+    border-radius: 0 20px;
+    padding: 0 20px;
+    box-shadow: none;
+
+    .navbar-list {
+      gap: 30px;
+      padding: 0 20px;
+
+      .navbar-item {
+        .navbar-link {
+          font-weight: $fw-500;
+        }
+      }
+    }
+  }
+
+  // About
+  .service {
+    .service-list {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 25px;
+    }
+  }
+
+  // Portfolio
+  .projects {
+    .project-list {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

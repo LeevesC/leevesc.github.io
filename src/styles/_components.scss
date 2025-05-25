@@ -4,6 +4,20 @@
 
 @use "variables" as *;
 
+:root {
+  @include font-sizes("base");
+}
+
+// Sidebar styles
+.sidebar {
+  background: $eerie-black-2;
+  border: 1px solid $jet;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: $shadow-1;
+  z-index: 1;
+}
+
 // Separator
 .separator {
   width: 100%;
@@ -15,7 +29,7 @@
 // Icon box
 .icon-box {
   position: relative;
-  background: $border-gradient-onyx;
+  background: red;
   width: 30px;
   height: 30px;
   border-radius: 8px;
@@ -61,10 +75,6 @@ article {
 .article-title {
   position: relative;
   padding-bottom: 7px;
-  color: $white-2;
-  font-size: $fs-3;
-  font-weight: $fw-600;
-  text-transform: capitalize;
 
   &::after {
     content: "";
@@ -133,58 +143,28 @@ article {
   border-radius: 12px 12px 0 0;
   box-shadow: $shadow-2;
   z-index: 5;
-}
 
-.navbar-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px;
-}
-
-.navbar-link {
-  color: $light-gray;
-  font-size: $fs-8;
-  padding: 20px 7px;
-  transition: color $transition-1;
-
-  &:hover,
-  &.active {
-    color: $orange-yellow-crayola;
+  .navbar-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
   }
-}
 
-// Clients list
-.clients {
-  margin-bottom: 15px;
-}
-
-.clients-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
-  margin: 0 -15px;
-  padding: 25px 15px;
-  padding-bottom: 25px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-}
-
-.clients-item {
-  min-width: calc(50% - 10px);
-  scroll-snap-align: start;
-
-  img {
-    width: 100%;
-    filter: grayscale(1);
-    transition: $transition-1;
+  .navbar-link {
+    color: $light-gray;
+    font-size: var(--fs-8);
+    padding: 20px 7px;
+    transition: color $transition-1;
 
     &:hover {
-      filter: grayscale(0);
+      color: $light-gray-70;
+    }
+
+    &.active {
+      color: $orange-yellow-crayola;
+      font-weight: $fw-600;
     }
   }
 }
@@ -201,118 +181,6 @@ article {
   background: $text-gradient-yellow;
   height: 100%;
   border-radius: inherit;
-}
-
-// Form components
-.form-input {
-  color: $white-2;
-  font-size: $fs-6;
-  font-weight: $fw-400;
-  padding: 13px 20px;
-  border: 1px solid $jet;
-  border-radius: 14px;
-  outline: none;
-
-  &::placeholder {
-    font-weight: $fw-500;
-  }
-
-  &:focus {
-    border-color: $orange-yellow-crayola;
-  }
-
-  &:focus:invalid {
-    border-color: $bittersweet-shimmer;
-  }
-}
-
-textarea.form-input {
-  min-height: 120px;
-  height: 120px;
-  max-height: 200px;
-  resize: vertical;
-  margin-bottom: 25px;
-
-  &::-webkit-resizer {
-    display: none;
-  }
-}
-
-.form-btn {
-  position: relative;
-  width: 100%;
-  background: $border-gradient-onyx;
-  color: $orange-yellow-crayola;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 13px 20px;
-  border-radius: 14px;
-  font-size: $fs-6;
-  text-transform: capitalize;
-  box-shadow: $shadow-3;
-  z-index: 1;
-  transition: $transition-1;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 1px;
-    background: $bg-gradient-jet;
-    border-radius: inherit;
-    z-index: -1;
-    transition: $transition-1;
-  }
-
-  ion-icon {
-    font-size: 16px;
-  }
-
-  &:hover {
-    background: $bg-gradient-yellow-1;
-
-    &::before {
-      background: $bg-gradient-yellow-2;
-    }
-  }
-
-  &:disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
-
-    &:hover {
-      background: $border-gradient-onyx;
-
-      &::before {
-        background: $bg-gradient-jet;
-      }
-    }
-  }
-}
-
-// Filter components
-.filter-select-box {
-  position: relative;
-  margin-bottom: 25px;
-}
-
-.filter-select {
-  background: $eerie-black-2;
-  color: $light-gray;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 12px 16px;
-  border: 1px solid $jet;
-  border-radius: 14px;
-  font-size: $fs-6;
-  font-weight: $fw-400;
-
-  &.active .select-icon {
-    transform: rotate(0.5turn);
-  }
 }
 
 .select-list {
@@ -339,7 +207,7 @@ textarea.form-input {
 .select-item button {
   background: $eerie-black-2;
   color: $light-gray;
-  font-size: $fs-6;
+  font-size: var(--fs-6);
   font-weight: $fw-400;
   text-transform: capitalize;
   width: 100%;

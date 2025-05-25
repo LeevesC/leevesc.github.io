@@ -12,7 +12,6 @@ function Portfolio() {
       </header>
 
       <section className="projects">
-
         {/* <ul className="filter__list">
           <li className="filter__item">
             <button className="active" data-filter-btn>
@@ -56,14 +55,14 @@ function Portfolio() {
           </ul>
         </div> */}
 
-        <ul className="project__list">
+        <ul className="project-list">
           <li
-            className="project__item active"
+            className="project-item active"
             data-filter-item
             data-category="web development"
           >
             <a href="#">
-              <figure className="project__img">
+              <figure className="project-img">
                 <img
                   src="/assets/portfolio/project-1.jpg"
                   alt="finance"
@@ -76,12 +75,148 @@ function Portfolio() {
           </li>
 
           <li
-            className="project__item active"
+            className="project-item active"
             data-filter-item
             data-category="web development"
           >
             <a href="#">
-              <figure className="project__img">
+              <figure className="project-img">
+                <img
+                  src="/assets/portfolio/project-2.png"
+                  alt="orizon"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 className="project-title">Orizon</h3>
+              <p className="project-category">Web development</p>
+            </a>
+          </li>
+          <li
+            className="project-item active"
+            data-filter-item
+            data-category="web development"
+          >
+            <a href="#">
+              <figure className="project-img">
+                <img
+                  src="/assets/portfolio/project-2.png"
+                  alt="orizon"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 className="project-title">Orizon</h3>
+              <p className="project-category">Web development</p>
+            </a>
+          </li>
+          <li
+            className="project-item active"
+            data-filter-item
+            data-category="web development"
+          >
+            <a href="#">
+              <figure className="project-img">
+                <img
+                  src="/assets/portfolio/project-2.png"
+                  alt="orizon"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 className="project-title">Orizon</h3>
+              <p className="project-category">Web development</p>
+            </a>
+          </li>
+          <li
+            className="project-item active"
+            data-filter-item
+            data-category="web development"
+          >
+            <a href="#">
+              <figure className="project-img">
+                <img
+                  src="/assets/portfolio/project-2.png"
+                  alt="orizon"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 className="project-title">Orizon</h3>
+              <p className="project-category">Web development</p>
+            </a>
+          </li>
+          <li
+            className="project-item active"
+            data-filter-item
+            data-category="web development"
+          >
+            <a href="#">
+              <figure className="project-img">
+                <img
+                  src="/assets/portfolio/project-2.png"
+                  alt="orizon"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 className="project-title">Orizon</h3>
+              <p className="project-category">Web development</p>
+            </a>
+          </li>
+          <li
+            className="project-item active"
+            data-filter-item
+            data-category="web development"
+          >
+            <a href="#">
+              <figure className="project-img">
+                <img
+                  src="/assets/portfolio/project-2.png"
+                  alt="orizon"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 className="project-title">Orizon</h3>
+              <p className="project-category">Web development</p>
+            </a>
+          </li>
+          <li
+            className="project-item active"
+            data-filter-item
+            data-category="web development"
+          >
+            <a href="#">
+              <figure className="project-img">
+                <img
+                  src="/assets/portfolio/project-2.png"
+                  alt="orizon"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 className="project-title">Orizon</h3>
+              <p className="project-category">Web development</p>
+            </a>
+          </li>
+          <li
+            className="project-item active"
+            data-filter-item
+            data-category="web development"
+          >
+            <a href="#">
+              <figure className="project-img">
+                <img
+                  src="/assets/portfolio/project-2.png"
+                  alt="orizon"
+                  loading="lazy"
+                />
+              </figure>
+              <h3 className="project-title">Orizon</h3>
+              <p className="project-category">Web development</p>
+            </a>
+          </li>
+          <li
+            className="project-item active"
+            data-filter-item
+            data-category="web development"
+          >
+            <a href="#">
+              <figure className="project-img">
                 <img
                   src="/assets/portfolio/project-2.png"
                   alt="orizon"
