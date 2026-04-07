@@ -1,0 +1,134 @@
+/* =====================
+   DESIGN TOKENS
+   Single source of truth for all design values.
+   Reference these variables in style.css instead of raw values.
+   ===================== */
+
+:root {
+
+  /* --------------------
+     COLORS — Surfaces
+     -------------------- */
+  --surface:                    #f7f9fb;
+  --surface-container-low:      #f0f4f7;
+  --surface-container:          #eaeff2;
+  --surface-container-high:     #e3e9ed;
+  --surface-container-highest:  #dce4e8;
+  --surface-container-lowest:   #ffffff;
+
+  /* --------------------
+     COLORS — Text
+     -------------------- */
+  --on-background:        #2c3437;
+  --on-surface:           #2c3437;
+  --on-surface-variant:   #596064;
+  --on-primary:           #faf8ff;
+
+  /* --------------------
+     COLORS — Brand
+     -------------------- */
+  --primary:              #525c8c;
+  --tertiary:             #6f557d;
+  --outline-variant:      #acb3b7;
+
+  /* --------------------
+     COLORS — External palette
+     -------------------- */
+  --slate-900:            #0f172a;
+  --slate-500:            #64748b;
+  --slate-400:            #94a3b8;
+  --indigo-500:           #6366f1;
+  --indigo-400:           #818cf8;
+
+  /* --------------------
+     GRADIENT — Signature
+     -------------------- */
+  --gradient-signature: linear-gradient(135deg, var(--primary) 0%, var(--tertiary) 100%);
+
+  /* --------------------
+     TYPOGRAPHY — Sizes
+     -------------------- */
+  --text-micro:     0.65rem;   /* scroll hints, fine print     */
+  --text-label:     0.75rem;   /* nav, metadata, buttons       */
+  --text-sm:        0.875rem;  /* secondary body               */
+  --text-body:      1rem;      /* narrative paragraphs         */
+  --text-subtitle:  1.25rem;   /* tagline (mobile)             */
+  --text-subtitle-md: 1.5rem;  /* tagline (desktop)            */
+  --text-headline:  1.875rem;  /* section headings             */
+  --text-display:   3.75rem;   /* hero name (mobile)           */
+  --text-display-md: 5.5rem;   /* hero name (desktop)          */
+
+  /* --------------------
+     TYPOGRAPHY — Weights
+     -------------------- */
+  --weight-light:     300;
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-semibold:  600;
+  --weight-bold:      700;
+  --weight-black:     900;
+
+  /* --------------------
+     TYPOGRAPHY — Letter-spacing
+     -------------------- */
+  --tracking-tight:   -0.04em;
+  --tracking-normal:   0;
+  --tracking-wide:     0.1em;
+  --tracking-wider:    0.2em;
+
+  /* --------------------
+     TYPOGRAPHY — Line-height
+     -------------------- */
+  --leading-none:     1;
+  --leading-tight:    1.25;
+  --leading-normal:   1.5;
+  --leading-relaxed:  1.625;
+  --leading-airy:     1.6;
+
+  /* --------------------
+     SPACING
+     -------------------- */
+  --space-xs:   0.5rem;    /* inline text gap              */
+  --space-sm:   0.75rem;   /* icon–text gap                */
+  --space-md:   1rem;      /* compact element padding      */
+  --space-lg:   1.5rem;    /* CTA button gap               */
+  --space-xl:   2rem;      /* button padding, section top  */
+  --space-2xl:  3rem;      /* major layout block gap       */
+  --space-3xl:  8rem;      /* section vertical padding     */
+
+  /* --------------------
+     BORDER RADIUS
+     -------------------- */
+  --radius-sm:    0.25rem;
+  --radius-md:    1rem;      /* inner elements, images       */
+  --radius-lg:    2rem;      /* cards, bento blocks          */
+  --radius-full:  9999px;    /* pills, avatars, badges       */
+
+  /* --------------------
+     SHADOWS
+     -------------------- */
+  --shadow-card:   0 20px 40px rgba(82, 92, 140, 0.06);
+  --shadow-badge:  0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                   0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-float:  0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-btn:    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                   0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* --------------------
+     GLASS / FROSTED LAYER
+     -------------------- */
+  --glass-bg:     rgba(255, 255, 255, 0.4);
+  --glass-blur:   blur(64px);
+
+  /* --------------------
+     TRANSITIONS
+     -------------------- */
+  --ease:           cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast:  200ms;
+  --duration-base:  300ms;
+  --duration-slow:  700ms;
+  --transition-color:      color var(--duration-base) var(--ease);
+  --transition-bg:         background-color var(--duration-base) var(--ease);
+  --transition-transform:  transform var(--duration-base) var(--ease);
+
+}
