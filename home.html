@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>ALEX RIVERA | Creative Director</title>
+    <title>LEE ZHOU | Creative Director</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -13,24 +13,13 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="tokens.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/tokens.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- TopNavBar -->
-    <nav class="nav-bar">
-      <div class="nav-container">
-        <div class="nav-logo">LEE ZHOU</div>
-        <div class="nav-links">
-          <a class="nav-link" href="#">Gallery</a>
-          <a class="nav-link" href="#">Case Studies</a>
-          <a class="nav-link" href="#">About</a>
-          <a class="nav-link" href="#">Contact</a>
-        </div>
-        <button class="nav-menu-btn">
-          <span class="material-symbols-outlined">menu</span>
-        </button>
-      </div>
+    <nav id="nav-bar">
+      <!-- populated by main.js -->
     </nav>
 
     <!-- Main Content Canvas -->
@@ -48,22 +37,17 @@
         <div class="avatar-wrapper">
           <div class="avatar-img-container">
             <img
-              alt="Alex Rivera"
+              alt="Lee Zhou"
               class="avatar-img"
-              data-alt="Close-up portrait of a thoughtful creative director with short dark hair and a minimalist black turtleneck in a soft-lit studio setting"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1bhiuXM0tid04MjRvy8m6383NMgpnT6ikzThFwKsAeen8-WBDX3huZLRnJ63RhMk0jbpJsPkpwexl_ftOwf67HLseqXU0GY9c-fAtRi4mq4dmMRlmgqpqfBi7vC55vZDDatxq3hEyPGeR3_fwVHcEbtb1m_TLf9u3Qeyq2FDTt5CNtGlZBATb8mEpZCi4DiXQ-Hc98KN144djhGrRHZzVz3gAZw_phOZuoIV7IdGEphvfiKC6vvCpjDkYJ16iN62oPsGKGrqbx9l3"
+              src="./resource/profile02.jpg"
             />
-          </div>
-          <!-- Floating Decorative Element -->
-          <div class="avatar-badge">
-            <span class="material-symbols-outlined">star</span>
           </div>
         </div>
 
         <!-- Identity Text -->
         <div class="hero-text">
-          <h1 class="hero-title">ALEX RIVERA</h1>
-          <p class="hero-subtitle">CREATIVE DIRECTOR</p>
+          <h1 class="hero-title">Lee Zhou</h1>
+          <p class="hero-subtitle">Systems Analyst & Data Analyst</p>
           <div class="hero-cta">
             <a class="btn-primary" href="#">
               View Portfolio
@@ -82,6 +66,405 @@
         </div>
       </div>
     </main>
-    <script src="script.js"></script>
+
+    <!-- About Content -->
+    <section id="about" class="about-section">
+      <div class="about-container reveal-item">
+        <div class="about-header">
+          <span class="section-label">Philosophy</span>
+          <h2 class="section-headline">
+            I sit at the Intersection of
+            <span class="text-highlight">Technical Systems</span>
+            and <span class="text-highlight">Business Logic</span>
+          </h2>
+        </div>
+        <div class="about-body">
+          <p class="about-text">
+            Business-technical translator with a systems architecture mindset —
+            I instinctively map entire processes end-to-end before proposing any
+            solution. Background spans senior fintech systems, automation
+            engineering in financial services, and technical diagnostics.
+          </p>
+          <p class="about-text">
+            Completed an M.Sc. in Data Science at the University of Adelaide in
+            2025, grounding practical systems work in analytical rigour.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Content -->
+    <section id="experience" class="experience-section">
+      <div class="experience-container">
+        <span class="section-label reveal-item">Experience</span>
+        <div class="exp-grid">
+          <article class="exp-card reveal-item">
+            <div class="exp-card-cover exp-cover--origin">
+              <svg
+                class="exp-cover-art"
+                viewBox="0 0 200 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <circle cx="170" cy="10" r="55" fill="rgba(255,255,255,0.07)" />
+                <circle cx="170" cy="10" r="35" fill="rgba(255,255,255,0.06)" />
+                <circle cx="20" cy="75" r="38" fill="rgba(255,255,255,0.04)" />
+              </svg>
+            </div>
+            <div class="exp-card-body">
+              <div class="exp-header-row">
+                <div class="exp-logo">OE</div>
+                <span class="exp-status-badge exp-status--current"
+                  >● Present</span
+                >
+              </div>
+              <strong class="exp-role">Telco Specialist</strong>
+              <p class="exp-company">Origin Energy</p>
+              <p class="exp-context">⚡ NBN Internet Service Provider</p>
+              <p class="exp-location">
+                <span class="material-symbols-outlined">location_on</span>
+                Adelaide, Australia
+              </p>
+            </div>
+          </article>
+
+          <article class="exp-card reveal-item" style="transition-delay: 110ms">
+            <div class="exp-card-cover exp-cover--virtus">
+              <svg
+                class="exp-cover-art"
+                viewBox="0 0 200 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <circle cx="170" cy="10" r="55" fill="rgba(255,255,255,0.07)" />
+                <circle cx="170" cy="10" r="35" fill="rgba(255,255,255,0.06)" />
+                <circle cx="20" cy="75" r="38" fill="rgba(255,255,255,0.04)" />
+              </svg>
+            </div>
+            <div class="exp-card-body">
+              <div class="exp-header-row">
+                <div class="exp-logo exp-logo--virtus">AVI</div>
+                <span class="exp-status-badge">2025</span>
+              </div>
+              <strong class="exp-role">ICT Support</strong>
+              <p class="exp-company">Australian Virtus Institute</p>
+              <p class="exp-context">🎓 Registered Training Organisation</p>
+              <p class="exp-location">
+                <span class="material-symbols-outlined">location_on</span>
+                Adelaide, Australia
+              </p>
+            </div>
+          </article>
+
+          <article class="exp-card reveal-item" style="transition-delay: 220ms">
+            <div class="exp-card-cover exp-cover--risehigh">
+              <svg
+                class="exp-cover-art"
+                viewBox="0 0 200 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <circle cx="170" cy="10" r="55" fill="rgba(255,255,255,0.07)" />
+                <circle cx="170" cy="10" r="35" fill="rgba(255,255,255,0.06)" />
+                <circle cx="20" cy="75" r="38" fill="rgba(255,255,255,0.04)" />
+              </svg>
+            </div>
+            <div class="exp-card-body">
+              <div class="exp-header-row">
+                <div class="exp-logo exp-logo--risehigh">RHF</div>
+                <span class="exp-status-badge">2024</span>
+              </div>
+              <strong class="exp-role">Automation Engineer</strong>
+              <p class="exp-company">RiseHigh Financial Solutions</p>
+              <p class="exp-context">💹 Mortgage Broker</p>
+              <p class="exp-location">
+                <span class="material-symbols-outlined">location_on</span>
+                Adelaide, Australia
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Content — populated by main.js from basic_info -->
+    <section id="skills" class="skills-section">
+      <div class="skills-container">
+        <span class="section-label reveal-item">Skills</span>
+        <div class="skills-grid" id="skills-grid">
+          <!-- populated by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Content -->
+    <section id="projects" class="projects-section">
+      <div class="projects-container">
+        <span class="section-label reveal-item">Projects</span>
+        <div class="projects-grid">
+          <article class="project-card reveal-item">
+            <div class="project-cover project-cover--nbn">
+              <svg
+                class="project-cover-icon"
+                viewBox="0 0 160 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <!-- Network tree: root node → 2 mid → 4 leaf -->
+                <circle cx="80" cy="18" r="7" fill="rgba(255,255,255,0.75)" />
+                <circle cx="45" cy="48" r="5.5" fill="rgba(255,255,255,0.55)" />
+                <circle
+                  cx="115"
+                  cy="48"
+                  r="5.5"
+                  fill="rgba(255,255,255,0.55)"
+                />
+                <circle cx="25" cy="76" r="4" fill="rgba(255,255,255,0.38)" />
+                <circle cx="65" cy="76" r="4" fill="rgba(255,255,255,0.38)" />
+                <circle cx="95" cy="76" r="4" fill="rgba(255,255,255,0.38)" />
+                <circle cx="135" cy="76" r="4" fill="rgba(255,255,255,0.38)" />
+                <line
+                  x1="80"
+                  y1="25"
+                  x2="45"
+                  y2="42"
+                  stroke="rgba(255,255,255,0.3)"
+                  stroke-width="1.5"
+                />
+                <line
+                  x1="80"
+                  y1="25"
+                  x2="115"
+                  y2="42"
+                  stroke="rgba(255,255,255,0.3)"
+                  stroke-width="1.5"
+                />
+                <line
+                  x1="45"
+                  y1="53"
+                  x2="25"
+                  y2="72"
+                  stroke="rgba(255,255,255,0.2)"
+                  stroke-width="1.2"
+                />
+                <line
+                  x1="45"
+                  y1="53"
+                  x2="65"
+                  y2="72"
+                  stroke="rgba(255,255,255,0.2)"
+                  stroke-width="1.2"
+                />
+                <line
+                  x1="115"
+                  y1="53"
+                  x2="95"
+                  y2="72"
+                  stroke="rgba(255,255,255,0.2)"
+                  stroke-width="1.2"
+                />
+                <line
+                  x1="115"
+                  y1="53"
+                  x2="135"
+                  y2="72"
+                  stroke="rgba(255,255,255,0.2)"
+                  stroke-width="1.2"
+                />
+              </svg>
+              <span class="project-cover-label">Network Diagnostics</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-slug">nbn-order-diagnostics</div>
+              <h3 class="project-name">NBN Order Diagnostics</h3>
+              <p class="project-co">
+                <span class="material-symbols-outlined">business</span>
+                Origin Energy
+              </p>
+              <p class="project-desc">
+                Root-cause analysis of NBN service order failures across FTTN,
+                FTTP, FTTC, and HFC infrastructure. Traced order lifecycle
+                exceptions within internal platforms before they reached
+                escalation.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Systems Analysis</span>
+                <span class="tag">TCP/IP</span>
+                <span class="tag">Process Mapping</span>
+                <span class="tag">NBN</span>
+              </div>
+              <a class="project-view-btn" href="#">
+                View Case Study
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="project-card reveal-item"
+            style="transition-delay: 130ms"
+          >
+            <div class="project-cover project-cover--pipeline">
+              <svg
+                class="project-cover-icon"
+                viewBox="0 0 160 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <!-- Three platform boxes connected by arrows -->
+                <rect
+                  x="8"
+                  y="36"
+                  width="34"
+                  height="28"
+                  rx="6"
+                  fill="rgba(255,255,255,0.18)"
+                  stroke="rgba(255,255,255,0.55)"
+                  stroke-width="1.5"
+                />
+                <rect
+                  x="63"
+                  y="36"
+                  width="34"
+                  height="28"
+                  rx="6"
+                  fill="rgba(255,255,255,0.18)"
+                  stroke="rgba(255,255,255,0.55)"
+                  stroke-width="1.5"
+                />
+                <rect
+                  x="118"
+                  y="36"
+                  width="34"
+                  height="28"
+                  rx="6"
+                  fill="rgba(255,255,255,0.18)"
+                  stroke="rgba(255,255,255,0.55)"
+                  stroke-width="1.5"
+                />
+                <text
+                  x="25"
+                  y="53"
+                  text-anchor="middle"
+                  fill="rgba(255,255,255,0.85)"
+                  font-size="7.5"
+                  font-weight="700"
+                  font-family="monospace"
+                >
+                  EB
+                </text>
+                <text
+                  x="80"
+                  y="53"
+                  text-anchor="middle"
+                  fill="rgba(255,255,255,0.85)"
+                  font-size="7.5"
+                  font-weight="700"
+                  font-family="monospace"
+                >
+                  AC
+                </text>
+                <text
+                  x="135"
+                  y="53"
+                  text-anchor="middle"
+                  fill="rgba(255,255,255,0.85)"
+                  font-size="7.5"
+                  font-weight="700"
+                  font-family="monospace"
+                >
+                  BE
+                </text>
+                <!-- Arrow 1 -->
+                <line
+                  x1="43"
+                  y1="50"
+                  x2="61"
+                  y2="50"
+                  stroke="rgba(255,255,255,0.6)"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M57 46 L63 50 L57 54"
+                  stroke="rgba(255,255,255,0.6)"
+                  stroke-width="1.8"
+                  fill="none"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                />
+                <!-- Arrow 2 -->
+                <line
+                  x1="98"
+                  y1="50"
+                  x2="116"
+                  y2="50"
+                  stroke="rgba(255,255,255,0.6)"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M112 46 L118 50 L112 54"
+                  stroke="rgba(255,255,255,0.6)"
+                  stroke-width="1.8"
+                  fill="none"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                />
+                <!-- Moving-dot accent -->
+                <circle cx="52" cy="50" r="2.5" fill="rgba(255,255,255,0.55)" />
+                <circle
+                  cx="107"
+                  cy="50"
+                  r="2.5"
+                  fill="rgba(255,255,255,0.55)"
+                />
+              </svg>
+              <span class="project-cover-label">Automation Pipeline</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-slug">eventbrite-sync-pipeline</div>
+              <h3 class="project-name">Eventbrite Sync Pipeline</h3>
+              <p class="project-co">
+                <span class="material-symbols-outlined">business</span>
+                Rise High Financial Solutions
+              </p>
+              <p class="project-desc">
+                Identified a data sync gap in the event marketing workflow.
+                Built automation scripts bridging Eventbrite → ActiveCampaign →
+                BrokerEngine, eliminating manual data re-entry across three
+                platforms.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Automation</span>
+                <span class="tag">API Integration</span>
+                <span class="tag">Process Mapping</span>
+              </div>
+              <a class="project-view-btn" href="#">
+                View Case Study
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2025 Lee Zhou. All rights reserved.</p>
+        <div class="footer-links">
+          <a class="footer-link" href="#">LinkedIn</a>
+          <a class="footer-link" href="#">GitHub</a>
+          <a class="footer-link" href="mailto:leeves.chou@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
