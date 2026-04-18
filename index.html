@@ -14,7 +14,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/tokens.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/experience.css" />
+    <link rel="stylesheet" href="./css/skill.css" />
+    <link rel="stylesheet" href="./css/project.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
     <!-- TopNavBar -->
@@ -22,15 +31,15 @@
       <!-- populated by main.js -->
     </nav>
 
+    <!-- Animated Background Elements -->
+    <div class="bg-animation">
+      <div class="blob-1"></div>
+      <div class="blob-2"></div>
+      <div class="blob-3"></div>
+    </div>
+
     <!-- Main Content Canvas -->
     <main class="hero-section">
-      <!-- Animated Background Elements -->
-      <div class="hero-bg">
-        <div class="hero-blob-1"></div>
-        <div class="hero-blob-2"></div>
-        <div class="hero-blob-3"></div>
-      </div>
-
       <!-- Hero Branding Section -->
       <div class="hero-content">
         <!-- Circular Avatar -->
@@ -42,6 +51,7 @@
               src="./resource/profile02.jpg"
             />
           </div>
+          <div class="avatar-status-dot"></div>
         </div>
 
         <!-- Identity Text -->
@@ -72,7 +82,7 @@
       <div class="about-container reveal-item">
         <div class="about-header">
           <span class="section-label">Philosophy</span>
-          <h2 class="section-headline">
+          <h2 class="about-headline">
             I sit at the Intersection of
             <span class="text-highlight">Technical Systems</span>
             and <span class="text-highlight">Business Logic</span>
@@ -99,19 +109,7 @@
         <span class="section-label reveal-item">Experience</span>
         <div class="exp-grid">
           <article class="exp-card reveal-item">
-            <div class="exp-card-cover exp-cover--origin">
-              <svg
-                class="exp-cover-art"
-                viewBox="0 0 200 80"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <circle cx="170" cy="10" r="55" fill="rgba(255,255,255,0.07)" />
-                <circle cx="170" cy="10" r="35" fill="rgba(255,255,255,0.06)" />
-                <circle cx="20" cy="75" r="38" fill="rgba(255,255,255,0.04)" />
-              </svg>
-            </div>
+            <div class="exp-card-cover exp-cover--origin"></div>
             <div class="exp-card-body">
               <div class="exp-header-row">
                 <div class="exp-logo">OE</div>
@@ -130,19 +128,7 @@
           </article>
 
           <article class="exp-card reveal-item" style="transition-delay: 110ms">
-            <div class="exp-card-cover exp-cover--virtus">
-              <svg
-                class="exp-cover-art"
-                viewBox="0 0 200 80"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <circle cx="170" cy="10" r="55" fill="rgba(255,255,255,0.07)" />
-                <circle cx="170" cy="10" r="35" fill="rgba(255,255,255,0.06)" />
-                <circle cx="20" cy="75" r="38" fill="rgba(255,255,255,0.04)" />
-              </svg>
-            </div>
+            <div class="exp-card-cover exp-cover--virtus"></div>
             <div class="exp-card-body">
               <div class="exp-header-row">
                 <div class="exp-logo exp-logo--virtus">AVI</div>
@@ -159,19 +145,7 @@
           </article>
 
           <article class="exp-card reveal-item" style="transition-delay: 220ms">
-            <div class="exp-card-cover exp-cover--risehigh">
-              <svg
-                class="exp-cover-art"
-                viewBox="0 0 200 80"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <circle cx="170" cy="10" r="55" fill="rgba(255,255,255,0.07)" />
-                <circle cx="170" cy="10" r="35" fill="rgba(255,255,255,0.06)" />
-                <circle cx="20" cy="75" r="38" fill="rgba(255,255,255,0.04)" />
-              </svg>
-            </div>
+            <div class="exp-card-cover exp-cover--risehigh"></div>
             <div class="exp-card-body">
               <div class="exp-header-row">
                 <div class="exp-logo exp-logo--risehigh">RHF</div>
@@ -207,75 +181,6 @@
         <div class="projects-grid">
           <article class="project-card reveal-item">
             <div class="project-cover project-cover--nbn">
-              <svg
-                class="project-cover-icon"
-                viewBox="0 0 160 100"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <!-- Network tree: root node → 2 mid → 4 leaf -->
-                <circle cx="80" cy="18" r="7" fill="rgba(255,255,255,0.75)" />
-                <circle cx="45" cy="48" r="5.5" fill="rgba(255,255,255,0.55)" />
-                <circle
-                  cx="115"
-                  cy="48"
-                  r="5.5"
-                  fill="rgba(255,255,255,0.55)"
-                />
-                <circle cx="25" cy="76" r="4" fill="rgba(255,255,255,0.38)" />
-                <circle cx="65" cy="76" r="4" fill="rgba(255,255,255,0.38)" />
-                <circle cx="95" cy="76" r="4" fill="rgba(255,255,255,0.38)" />
-                <circle cx="135" cy="76" r="4" fill="rgba(255,255,255,0.38)" />
-                <line
-                  x1="80"
-                  y1="25"
-                  x2="45"
-                  y2="42"
-                  stroke="rgba(255,255,255,0.3)"
-                  stroke-width="1.5"
-                />
-                <line
-                  x1="80"
-                  y1="25"
-                  x2="115"
-                  y2="42"
-                  stroke="rgba(255,255,255,0.3)"
-                  stroke-width="1.5"
-                />
-                <line
-                  x1="45"
-                  y1="53"
-                  x2="25"
-                  y2="72"
-                  stroke="rgba(255,255,255,0.2)"
-                  stroke-width="1.2"
-                />
-                <line
-                  x1="45"
-                  y1="53"
-                  x2="65"
-                  y2="72"
-                  stroke="rgba(255,255,255,0.2)"
-                  stroke-width="1.2"
-                />
-                <line
-                  x1="115"
-                  y1="53"
-                  x2="95"
-                  y2="72"
-                  stroke="rgba(255,255,255,0.2)"
-                  stroke-width="1.2"
-                />
-                <line
-                  x1="115"
-                  y1="53"
-                  x2="135"
-                  y2="72"
-                  stroke="rgba(255,255,255,0.2)"
-                  stroke-width="1.2"
-                />
-              </svg>
               <span class="project-cover-label">Network Diagnostics</span>
             </div>
             <div class="project-card-body">
@@ -309,120 +214,6 @@
             style="transition-delay: 130ms"
           >
             <div class="project-cover project-cover--pipeline">
-              <svg
-                class="project-cover-icon"
-                viewBox="0 0 160 100"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <!-- Three platform boxes connected by arrows -->
-                <rect
-                  x="8"
-                  y="36"
-                  width="34"
-                  height="28"
-                  rx="6"
-                  fill="rgba(255,255,255,0.18)"
-                  stroke="rgba(255,255,255,0.55)"
-                  stroke-width="1.5"
-                />
-                <rect
-                  x="63"
-                  y="36"
-                  width="34"
-                  height="28"
-                  rx="6"
-                  fill="rgba(255,255,255,0.18)"
-                  stroke="rgba(255,255,255,0.55)"
-                  stroke-width="1.5"
-                />
-                <rect
-                  x="118"
-                  y="36"
-                  width="34"
-                  height="28"
-                  rx="6"
-                  fill="rgba(255,255,255,0.18)"
-                  stroke="rgba(255,255,255,0.55)"
-                  stroke-width="1.5"
-                />
-                <text
-                  x="25"
-                  y="53"
-                  text-anchor="middle"
-                  fill="rgba(255,255,255,0.85)"
-                  font-size="7.5"
-                  font-weight="700"
-                  font-family="monospace"
-                >
-                  EB
-                </text>
-                <text
-                  x="80"
-                  y="53"
-                  text-anchor="middle"
-                  fill="rgba(255,255,255,0.85)"
-                  font-size="7.5"
-                  font-weight="700"
-                  font-family="monospace"
-                >
-                  AC
-                </text>
-                <text
-                  x="135"
-                  y="53"
-                  text-anchor="middle"
-                  fill="rgba(255,255,255,0.85)"
-                  font-size="7.5"
-                  font-weight="700"
-                  font-family="monospace"
-                >
-                  BE
-                </text>
-                <!-- Arrow 1 -->
-                <line
-                  x1="43"
-                  y1="50"
-                  x2="61"
-                  y2="50"
-                  stroke="rgba(255,255,255,0.6)"
-                  stroke-width="1.8"
-                />
-                <path
-                  d="M57 46 L63 50 L57 54"
-                  stroke="rgba(255,255,255,0.6)"
-                  stroke-width="1.8"
-                  fill="none"
-                  stroke-linejoin="round"
-                  stroke-linecap="round"
-                />
-                <!-- Arrow 2 -->
-                <line
-                  x1="98"
-                  y1="50"
-                  x2="116"
-                  y2="50"
-                  stroke="rgba(255,255,255,0.6)"
-                  stroke-width="1.8"
-                />
-                <path
-                  d="M112 46 L118 50 L112 54"
-                  stroke="rgba(255,255,255,0.6)"
-                  stroke-width="1.8"
-                  fill="none"
-                  stroke-linejoin="round"
-                  stroke-linecap="round"
-                />
-                <!-- Moving-dot accent -->
-                <circle cx="52" cy="50" r="2.5" fill="rgba(255,255,255,0.55)" />
-                <circle
-                  cx="107"
-                  cy="50"
-                  r="2.5"
-                  fill="rgba(255,255,255,0.55)"
-                />
-              </svg>
               <span class="project-cover-label">Automation Pipeline</span>
             </div>
             <div class="project-card-body">
@@ -465,6 +256,7 @@
       </div>
     </footer>
 
+    <script type="module" src="./js/covers.js"></script>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

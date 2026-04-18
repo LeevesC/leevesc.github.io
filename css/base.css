@@ -1,0 +1,28 @@
+/* =====================
+   RESET & BASE
+   ===================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* the width I set is the total width */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  -webkit-font-smoothing: antialiased; /* renders font edges */
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--surface);
+  color: var(--on-background);
+  overflow-x: hidden; /* no horizontal scrollbar */
+}
+
+.material-symbols-outlined {
+  /* control the icon's visual style */
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}

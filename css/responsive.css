@@ -1,0 +1,70 @@
+/* =====================
+   RESPONSIVE — md breakpoint (768px)
+   ===================== */
+@media (min-width: 768px) {
+  .nav-links,
+  .nav-links[data-open="true"] {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    padding: 0;
+    background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+    gap: 2.5rem;
+  }
+
+  .nav-menu-btn {
+    display: none;
+  }
+
+  .hero-content {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .avatar-img-container {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+
+  .hero-cta {
+    justify-content: flex-start;
+  }
+
+  .hero-title {
+    font-size: var(--text-display-md);
+  }
+
+  .hero-subtitle {
+    font-size: var(--text-subtitle-md);
+  }
+
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .exp-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

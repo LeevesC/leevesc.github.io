@@ -1,0 +1,132 @@
+.bg-animation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.blob-1 {
+  position: absolute; /* absolute position, offset based on its nearest relative parent element*/
+  top: -20%;
+  left: -10%;
+  width: 60%;
+  height: 60%;
+  border-radius: var(--radius-full);
+  background-color: rgba(82, 92, 140, 0.84);
+  filter: blur(8px);
+  animation:
+    blob1-x 17.5s ease-in-out infinite alternate,
+    blob1-y 24.2s ease-in-out infinite alternate -4.6s,
+    blob1-s 31.4s ease-in-out infinite alternate -2.5s;
+}
+
+.blob-2 {
+  position: absolute;
+  top: 40%;
+  right: -15%;
+  width: 50%;
+  height: 50%;
+  border-radius: var(--radius-full);
+  background-color: rgba(111, 85, 125, 0.683);
+  filter: blur(1px);
+  animation:
+    blob2-x 22.4s ease-in-out infinite alternate -7.5s,
+    blob2-y 15.7s ease-in-out infinite alternate -1s,
+    blob2-s 26.2s ease-in-out infinite alternate -7.5s;
+}
+
+.blob-3 {
+  position: absolute;
+  bottom: -10%;
+  left: 20%;
+  width: 40%;
+  height: 40%;
+  border-radius: var(--radius-full);
+  background-color: rgba(175, 185, 238, 0.741);
+  filter: blur(8px);
+  animation:
+    blob3-x 14.3s ease-in-out infinite alternate -2.3s,
+    blob3-y 19.6s ease-in-out infinite alternate -7.8s,
+    blob3-s 34.9s ease-in-out infinite alternate -17.2s;
+}
+
+/* blob-1 keyframes — speedX:0.00018 ampX:38 | speedY:0.00013 ampY:28 | speedS:0.0001 ampS:0.06 */
+@keyframes blob1-x {
+  from {
+    translate: -38px 0;
+  }
+  to {
+    translate: 38px 0;
+  }
+}
+@keyframes blob1-y {
+  from {
+    translate: 0 -28px;
+  }
+  to {
+    translate: 0 28px;
+  }
+}
+@keyframes blob1-s {
+  from {
+    scale: 0.94;
+  }
+  to {
+    scale: 1.16;
+  }
+}
+
+/* blob-2 keyframes — speedX:0.00014 ampX:30 | speedY:0.0002 ampY:40 | speedS:0.00012 ampS:0.07 */
+@keyframes blob2-x {
+  from {
+    translate: -30px 0;
+  }
+  to {
+    translate: 30px 0;
+  }
+}
+@keyframes blob2-y {
+  from {
+    translate: 0 -40px;
+  }
+  to {
+    translate: 0 40px;
+  }
+}
+@keyframes blob2-s {
+  from {
+    scale: 0.93;
+  }
+  to {
+    scale: 1.11;
+  }
+}
+
+/* blob-3 keyframes — speedX:0.00022 ampX:45 | speedY:0.00016 ampY:32 | speedS:0.00009 ampS:0.05 */
+@keyframes blob3-x {
+  from {
+    translate: -45px 0;
+  }
+  to {
+    translate: 45px 0;
+  }
+}
+@keyframes blob3-y {
+  from {
+    translate: 0 -32px;
+  }
+  to {
+    translate: 0 32px;
+  }
+}
+@keyframes blob3-s {
+  from {
+    scale: 0.85;
+  }
+  to {
+    scale: 1;
+  }
+}
