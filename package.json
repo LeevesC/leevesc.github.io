@@ -1,0 +1,23 @@
+{
+  "name": "portfolio_v0.0.2",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "keywords": [
+    "portfolio"
+  ],
+  "homepage": "https://github.com/LeevesC/leevesc.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/LeevesC/leevesc.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeevesC/leevesc.github.io.git"
+  },
+  "license": "ISC",
+  "author": "leeves",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

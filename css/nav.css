@@ -53,7 +53,8 @@
   transition: var(--transition-color);
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link--active {
   color: var(--indigo-500);
 }
 
